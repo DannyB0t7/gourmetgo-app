@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { ModalCtx } from "../store/ModalContext";
+import CartIcon from "./CartIcon";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -25,8 +26,7 @@ const StyledImg = styled.img`
 
 const StyledCartCont = styled.div`
   display: flex;
-  gap: 0.5rem;
-  align-items: center;
+  gap: 1rem;
 
   &:hover {
     cursor: pointer;
@@ -43,12 +43,7 @@ function Header() {
         <h2 style={{ margin: "2rem 0" }}>GourmetGo</h2>
       </StyledLogoContainer>
       <StyledCartCont onClick={onOpenModal}>
-        <span
-          className="material-symbols-outlined"
-          style={{ fontSize: "2rem" }}
-        >
-          shopping_cart
-        </span>
+        <CartIcon />
         <p style={{ fontSize: "1.5rem" }}>Cart</p>
       </StyledCartCont>
     </StyledContainer>
