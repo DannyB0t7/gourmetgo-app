@@ -19,3 +19,7 @@
 - **useReducer Hook** – Manages state and dispatches cart actions
 - **Context API** – State management for cart items
 - **Styled Components** – Custom styling for a modern UI
+
+## 🚀 Live Demo
+
+🔗 [Live Demo](https://gourmetgoapp-fb.netlify.app/)
